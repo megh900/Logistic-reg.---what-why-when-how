@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Logistic Regression – What, Why, When, How</title>
+<style>
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
+    color: #f5f5f5;
+  }
+
+  header {
+    max-width: 800px;
+    margin: 0 auto 1.5rem auto;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  }
+
+  header h2 {
+    margin: 0.2rem 0;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  header p {
+    margin: 0.1rem 0;
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ffde59;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  }
+
+  .card {
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+  }
+
+  .card h3 {
+    color: #ffde59;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    line-height: 1.5;
+  }
+
+  ul {
+    margin: 0.5rem 0 0 1.2rem;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 0.3rem;
+  }
+
+  @media (max-width: 500px) {
+    body { padding: 0.5rem; }
+    .card { padding: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Group-7: Logistic Regression Overview</h2>
+  <p>Members: Megh Patel (25PG030138), Bhargav Chaudhary (25PG030043)</p>
+</header>
+
+<h1>📚 Logistic Regression – What, Why, When, How</h1>
+
+<div class="card">
+  <h3>❓ What is Logistic Regression?</h3>
+  <p>
+    Logistic Regression is a statistical and machine learning technique used for classification problems where the target variable is categorical.
+    Instead of predicting exact numerical values, it estimates the probability that a given input belongs to a certain class.
+    This probability is transformed using the **sigmoid function** so it always lies between 0 and 1.
+  </p>
+  <ul>
+    <li>Type: Classification algorithm (binary or multiclass).</li>
+    <li>Mathematics: Based on the concept of log-odds (logit function).</li>
+    <li>Output: Probability values that can be converted into class labels.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>❓ Why use Logistic Regression?</h3>
+  <p>
+    Logistic Regression is widely used because it’s simple, interpretable, and computationally efficient.
+    It not only predicts categories but also provides probabilities, which can help in risk assessment and decision-making.
+  </p>
+  <ul>
+    <li>Easy to understand – coefficients tell you how each feature affects the outcome.</li>
+    <li>Computationally fast – works well even with large datasets.</li>
+    <li>Produces probability scores, useful for ranking and threshold-based decisions.</li>
+    <li>Well-studied – mathematically proven and widely trusted in various fields.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>❓ When should Logistic Regression be applied?</h3>
+  <p>
+    Logistic Regression should be used when:
+  </p>
+  <ul>
+    <li>Your dependent variable is binary (Yes/No, Pass/Fail, 0/1) or categorical with multiple classes.</li>
+    <li>The relationship between predictors and the log-odds of the outcome is approximately linear.</li>
+    <li>You need interpretability – to understand which factors are most influential.</li>
+    <li>You want a baseline model before trying more complex algorithms.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <h3>❓ How does Logistic Regression work?</h3>
+  <p>
+    Logistic Regression follows these steps:
+  </p>
+  <ul>
+    <li><b>Step 1:</b> Take a linear combination of the input features (weighted sum).</li>
+    <li><b>Step 2:</b> Apply the sigmoid function to map the result between 0 and 1.</li>
+    <li><b>Step 3:</b> Interpret this value as a probability.</li>
+    <li><b>Step 4:</b> Apply a threshold (usually 0.5) to assign a class label.</li>
+    <li><b>Step 5:</b> Use an optimization algorithm (like Gradient Descent) to adjust weights, minimizing the **log-loss**.</li>
+  </ul>
+</div>
+
+</body>
+</html>
